@@ -32,5 +32,7 @@ const config = {
 }
 ```
 위와 같은 템플릿이 가능한 것은 [TemplatePathPlugin](https://github.com/webpack/webpack/blob/master/lib/TemplatedPathPlugin.js)
-기본적으로 내장되어 있기 때문이다. `filename`에 할당된 템플릿 값들은 webpack의 configuration 문서에서 확인할 수 있다. [Link](https://webpack.js.org/configuration/output/#output-filename)
+기본적으로 내장되어 있기 때문이다. `filename`에 할당된 템플릿 값들은 webpack의 configuration 문서에서 확인할 수 있다. 
+
+[Link](https://webpack.js.org/configuration/output/#output-filename)
 소소한 팁으로 `[hash]`를 통해 build된 파일에 hash 값을 부여 할 수 있다.
