@@ -35,11 +35,11 @@ webpack --module-bind jade-loader --module-bind 'css=style-loader!css-loader'
 ## 주의할 점
 loader는 좀 더 주의할 점이 몇 가지있는데, 
 
-**처리 주기가 연쇄적으로 일어난다는 것**
+**처리 주기가 연쇄적으로 일어날수 있다는 것**
 
 ( rules 속성을 보면 `Array<Object>` 형식인걸 알 수 있듯이 loader는 순차적으로 실행되며 앞선 loader의 결과물이 이후 loader에게 전달되며 이는 반복적으로 이루어진다. ), 
 
-**Loader는 비동기적으로 호출 될 수 있다.**
+**Loader는 비동기적으로 호출될수 있다.**
 
 ( 당혹스럽지만, node.js에서 구동됨으로 이는 당연히 가능하다. 이는 웹팩에서 비동기적으로 호출하는게 아니라 loader자체가 비동기적으로 호출되는 요소이니 오해해서는 안된다. 반드시 loader의 특징을 숙지할 필요가 있겠다.)
 
