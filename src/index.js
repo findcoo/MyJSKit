@@ -1,12 +1,5 @@
-class A {
-    constructor() {
-        this.msg = "hello";
-    }
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './components/App'
 
-    get message() {
-        return this.msg;
-    }
-}
-
-const a = new A();
-console.log(a.message);
+ReactDOM.render(<App />, document.getElementById('root'))
